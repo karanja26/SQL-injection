@@ -5,23 +5,37 @@
 <br>SQL injection is a code injection technique that exploits vulnerabilities in an application's software by inserting malicious SQL queries into input fields. This can allow attackers to manipulate a database, gaining unauthorized access to data or executing administrative operations.
   Automated Tools and Scripts: Attackers increasingly use automated tools to scan for and exploit SQL injection vulnerabilities. Tools like SQLmap can automate the discovery and exploitation of SQL injection flaws.
 <br/>
+  SQL injection is the most common and devastating attack that attackers can use to take control of data-driven web applications and websites. It is a code injection technique that exploits a security vulnerability in a website or application’s software. SQL injection attacks use a series of malicious SQL (Structured Query Language) queries or statements to directly manipulate any type of SQL database. Applications often use SQL statements to authenticate users, validate roles and access levels, store, obtain information for the application and user, and link to other data sources. SQL injection attacks work when applications do not properly validate input before passing it to a SQL statement.
+When attackers use tactics like SQL injection to compromise web applications and sites, the targeted organizations can incur huge losses in terms of money, reputation, and loss of data and functionality.
+As an ethical hacker or penetration tester (hereafter, pen tester), you must possess sound knowledge of SQL injection techniques and be able protect against them in diverse ways such as using prepared statements with bind parameters, whitelist input validation, and user-supplied input escaping. Input validation can be used to detect unauthorized input before it is passed to the SQL query.
+The labs in this module give hands-on experience in testing a web application against various SQL injection attacks.
+
 <h2>Tools and appplication usedused</h2>
 <b>SQLmap </b>
+<br>sqlmap is an open-source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features, and a broad range of switches—from database fingerprinting and data fetching from the database to accessing the underlying file system and executing commands on the OS via out-of-band connections.</br>
+<br>You can use sqlmap to perform SQL injection on a target website using various techniques, including Boolean-based blind, time-based blind, error-based, UNION query-based, stacked queries, and out-of-band SQL injection.
+In this task, we will use sqlmap to perform SQL injection attack against MSSQL to extract databases.
+</br>
 <h2>Environment used</h2>
 <b>Windows 11,Parrot security machine</b>
 <h2>Program walkthrough:</h2>
+<br>Note: In this task, you will pretend that you are a registered user on the http://www.moviescope.com website, and you want to crack the passwords of the other users from the website’s database.</br>
 
 <p align="center">
-  step . 
+  step 1.	Click  Parrot Security to switch to the Parrot Security machine.
+	In the login page, the attacker username will be selected by default. Enter password in the Password field and press Enter to log in to the machine.
+
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/fffb9faa-c83d-4aeb-9315-88e1eb1d4439"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 <p align="center">
-  step . 
+  step 2.	Click the Mozilla Firefox icon from the menu bar in the top-left corner of Desktop to launch the web browser.
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/eb86ba46-7f32-4601-a59b-ff8ec91dd68e"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
