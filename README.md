@@ -246,6 +246,6 @@ To view the available commands under the OS shell, type help and press Enter.
 </p>
 
 <br>This concludes the demonstration of how to launch a SQL injection attack against MSSQL to extract databases using sqlmap.
-Close all open windows and document all the acquired information.
-You can also use other SQL injection tools such as Mole (https://sourceforge.net), Blisqy (https://github.com), blind-sql-bitshifting (https://github.com), and NoSQLMap (https://github.com) to perform SQL injection attacks.</br>
+You can also use other SQL injection tools such as Mole <br>(https://sourceforge.net), Blisqy (https://github.com), blind-sql-bitshifting (https://github.com), and NoSQLMap (https://github.com) </br>
+to perform SQL injection attacks.</br>
 
