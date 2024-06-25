@@ -123,6 +123,67 @@ alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
 </p>
 
 <p align="center">
+  step 9.sqlmap retrieves the databases present in the MSSQL server. It also displays information about the web server OS, web application technology, and the backend DBMS, as shown in the screenshot.
+ <br/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/ac3db0e2-a5e3-4879-b330-2dc585ab7153"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
+
+<p align="center">
+  step 10.Now, you need to choose a database and use sqlmap to retrieve the tables in the database. In this lab, we are going to determine the tables associated with the database moviescope.
+Type sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="[cookie value which you have copied in Step 5]" -D moviescope --tables and press Enter.
+Note: In this query, -D specifies the DBMS database to enumerate and --tables enumerates DBMS database tables.
+The above query causes sqlmap to scan the moviescope database for tables located in the database.
+
+ <br/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/c0060dc0-3420-4cd5-8cf1-55158ba82370" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
+
+<p align="center">
+  step 11.sqlmap retrieves the table contents of the moviescope database and displays them, as shown in screenshot. 
+ <br/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/e9ce9b33-09c4-4551-94c4-7b5d3947af2f"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
+
+
+<p align="center">
+  step 12.Now, you need to retrieve the table content of the column User_Login.
+Type sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="[cookie value which you have copied in Step 5]" -D moviescope -T User_Login --dump and press Enter to dump all the User_Login table content.
+
+ <br/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/ca6b0b2c-ea6c-4356-8ec5-d209f58bc499"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
+
+<p align="center">
+  step 13.sqlmap retrieves the complete User_Login table data from the database moviescope, containing all users’ usernames under the Uname column and passwords under the password column, as shown in screenshot.
+You will see that under the password column, the passwords are shown in plain text form.
+	
+ <br/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/7bedb2ce-aaf6-4426-8652-bd6cf4f1ae4d" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
+
+<p align="center">
+  step 14.To verify if the login details are valid, you should try to log in with the extracted login details of any of the users. To do so, switch back to the web browser, close the Developer Tools console, and click Logout to start a new session on the site.
+ <br/>
+  <img src="Https://github.com/karanja26/SQL-injection/assets/55892563/cdff5470-2b33-403b-b360-f11daf85dbda" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
+
+<p align="center">
+  step . 
+ <br/>
+  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
+
+<p align="center">
   step . 
  <br/>
   <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
@@ -143,27 +204,6 @@ alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
-
-<p align="center">
-  step . 
- <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
-  <br/>
-</p>
-
-<p align="center">
-  step . 
- <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
-  <br/>
-</p>
-
-<p align="center">
-  step . 
- <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
-  <br/>
-</p>
 
 <p align="center">
   step . 
