@@ -41,7 +41,7 @@ alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
 
 
 <p align="center">
-  step 3.	Type http://www.moviescope.com/ and press Enter. A Login page loads; enter the Username and Password as sam and test, respectively. Click the Login button.
+  step 3.Type http://www.moviescope.com/ and press Enter. A Login page loads; enter the Username and Password as sam and test, respectively. Click the Login button.
 Note: If a Would you like Firefox to save this login for moviescope.com? notification appears at the top of the browser window, click Don’t Save.<br>5.	Once you are logged into the website, click the View Profile tab on the menu bar and, when the page has loaded, make a note of the URL in the address bar of the browser.</br>
 
  <br/>
@@ -113,9 +113,12 @@ alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
 </p>
 
 <p align="center">
-  step . 
+  step 9.If the message Do you want to skip test payloads specific for other DBMSes? [Y/n] appears, type Y and press Enter.
+	If the message for the remaining tests, do you want to include all tests for ‘Microsoft SQL Server’ extending provided level (1) and risk (1) values? [Y/n] appears, type Y and press Enter.
+	Similarly, if any other message appears, type Y and press Enter to continue.
+
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/027c14e8-9043-4023-8d79-d0ea102e9699" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
