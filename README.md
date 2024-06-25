@@ -67,25 +67,27 @@ alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
 
 
 <p align="center">
-  step . 
+  step 5.The Developer Tools frame appears in the lower section of the browser window. Click the Console tab, type document.cookie in the lower-left corner of the browser, and press Enter.
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/3f076295-8d2c-4ff2-aaee-90a124abc45d"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 
 <p align="center">
-  step . 
+  step 5.Select the cookie value, then right-click and copy it, as shown in the screenshot. Minimize the web browser.
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/6bbb55c6-8f11-4baf-85ae-dbdb605581c3"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 
 <p align="center">
-  step . 
+  step 6.Click the MATE Terminal icon at the top of the Desktop window to open a Parrot Terminal window.
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src"!https://github.com/karanja26/SQL-injection/assets/55892563/d1beac5f-b2fe-416a-84b5-a9d86f5cc15b" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
