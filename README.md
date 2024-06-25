@@ -76,7 +76,7 @@ alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
 
 
 <p align="center">
-  step 5.Select the cookie value, then right-click and copy it, as shown in the screenshot. Minimize the web browser.
+  step 6.Select the cookie value, then right-click and copy it, as shown in the screenshot. Minimize the web browser.
  <br/>
   <img src="https://github.com/karanja26/SQL-injection/assets/55892563/6bbb55c6-8f11-4baf-85ae-dbdb605581c3"
 alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
@@ -103,7 +103,7 @@ Note: The password that you type will not be visible.
 
 <p align="center">
   step 8.In the Parrot Terminal window, type sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="[cookie value that you copied in Step 5]" --dbs and press Enter.
-Note: In this query, -u specifies the target URL (the one you noted down in Step 4), --cookie specifies the HTTP cookie header value, and --dbs enumerates DBMS databases.
+Note: In this query, -u specifies the target URL (the one you noted down in Step 5), --cookie specifies the HTTP cookie header value, and --dbs enumerates DBMS databases.
 The above query causes sqlmap to enforce various injection techniques on the name parameter of the URL in an attempt to extract the database information of the MovieScope website
 
  <br/>
@@ -132,7 +132,7 @@ alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
 
 <p align="center">
   step 10.Now, you need to choose a database and use sqlmap to retrieve the tables in the database. In this lab, we are going to determine the tables associated with the database moviescope.
-Type sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="[cookie value which you have copied in Step 5]" -D moviescope --tables and press Enter.
+Type sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="[cookie value which you have copied in Step 6]" -D moviescope --tables and press Enter.
 Note: In this query, -D specifies the DBMS database to enumerate and --tables enumerates DBMS database tables.
 The above query causes sqlmap to scan the moviescope database for tables located in the database.
 
@@ -152,7 +152,7 @@ alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
 
 <p align="center">
   step 12.Now, you need to retrieve the table content of the column User_Login.
-Type sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="[cookie value which you have copied in Step 5]" -D moviescope -T User_Login --dump and press Enter to dump all the User_Login table content.
+Type sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="[cookie value which you have copied in Step 6]" -D moviescope -T User_Login --dump and press Enter to dump all the User_Login table content.
 
  <br/>
   <img src="https://github.com/karanja26/SQL-injection/assets/55892563/ca6b0b2c-ea6c-4356-8ec5-d209f58bc499"
@@ -172,45 +172,81 @@ You will see that under the password column, the passwords are shown in plain te
 <p align="center">
   step 14.To verify if the login details are valid, you should try to log in with the extracted login details of any of the users. To do so, switch back to the web browser, close the Developer Tools console, and click Logout to start a new session on the site.
  <br/>
-  <img src="Https://github.com/karanja26/SQL-injection/assets/55892563/cdff5470-2b33-403b-b360-f11daf85dbda" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/cdff5470-2b33-403b-b360-f11daf85dbda" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 <p align="center">
-  step . 
+  step 15.The Login page appears; log in into the website using the retrieved credentials john/qwerty.
+Note: If a Would you like Firefox to save this login for moviescope.com? notification appears at the top of the browser window, click Don’t Save.
+ 
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/ee33b567-3de3-43bf-b597-78552d4b072f"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 <p align="center">
-  step . 
+  step 16.You will observe that you have successfully logged into the MovieScope website with john’s account, as shown in the screenshot.
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/29e82ffc-c987-4fe1-9c48-02aa6d9de516"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 <p align="center">
-  step . 
+  step 17.Now, switch back to the Parrot Terminal window. Type sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="[cookie value which you have copied in " --os-shell and press Enter.
+Note: In this query, --os-shell is the prompt for an interactive OS shell.
+ 
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/f1063cb2-dcf1-4550-9558-acc2e4318c1d"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 <p align="center">
-  step . 
+  step 18.If the message do you want sqlmap to try to optimize value(s) for DBMS delay responses appears, type Y and press Enter to continue.
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/f26d7403-68dd-4092-a8cc-ff13e5cf4180" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 
 <p align="center">
-  step . 
+  step 19.sqlmap will retrieve the hostname of the machine on which the target web application is running, as shown in the screenshot. 
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/9b5fe266-298f-4633-ab51-d5b7ad81e3c8"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
+<p align="center">
+  step 20.Type TASKLIST and press Enter to view a list of tasks that are currently running on the target system.
+ <br/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/4b645c8e-9a63-4462-be5f-7c00a9166e37"alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
 
+<p align="center">
+  step 21.If the message do you want to retrieve the command standard output? appears, type Y and press Enter.
+The above command retrieves the tasks and displays them under the command standard output section, as shown in the screenshots below.
+ 
+ <br/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/1713f17b-1902-49c9-856c-0c330dc45532" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
+
+<p align="center">
+  step 22.Following the same process, you can use various other commands to obtain further detailed information about the target machine.
+To view the available commands under the OS shell, type help and press Enter.
+
+ <br/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/d503a1c4-fccc-4c08-828c-b528510a346f" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
+________________________________________  
+
+	This concludes the demonstration of how to launch a SQL injection attack against MSSQL to extract databases using sqlmap.
+	Close all open windows and document all the acquired information.
+	You can also use other SQL injection tools such as Mole (https://sourceforge.net), Blisqy (https://github.com), blind-sql-bitshifting (https://github.com), and NoSQLMap (https://github.com) to perform SQL injection attacks.
 
