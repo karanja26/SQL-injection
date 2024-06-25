@@ -41,17 +41,27 @@ alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
 
 
 <p align="center">
-  step . 
+  step 3.	Type http://www.moviescope.com/ and press Enter. A Login page loads; enter the Username and Password as sam and test, respectively. Click the Login button.
+Note: If a Would you like Firefox to save this login for moviescope.com? notification appears at the top of the browser window, click Don’t Save.<br>5.	Once you are logged into the website, click the View Profile tab on the menu bar and, when the page has loaded, make a note of the URL in the address bar of the browser.</br>
+
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/a9cc68a0-ed61-4abf-a616-11adaf2c9da9"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 
 <p align="center">
-  step . 
+  step 4.Right-click anywhere on the webpage and click Inspect Element (Q) from the context menu, as shown in the screenshot.
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/4209c51e-775d-4529-b5fe-82e214f025cc"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <br/>
+</p>
+<p align="center">
+ <br/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/8821dd7f-1468-4580-a3f2-09180e76ce5d"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
