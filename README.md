@@ -87,21 +87,28 @@ alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
 <p align="center">
   step 6.Click the MATE Terminal icon at the top of the Desktop window to open a Parrot Terminal window.
  <br/>
-  <img src"!https://github.com/karanja26/SQL-injection/assets/55892563/d1beac5f-b2fe-416a-84b5-a9d86f5cc15b" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/8481a2b3-3806-452d-81d8-50a2235da2ef "alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 <p align="center">
-  step . 
+  step 7.A Parrot Terminal window appears. In the terminal window, type sudo su and press Enter to run the programs as a root user.
+In the [sudo] password for attacker field, type your password and press Enter.
+Note: The password that you type will not be visible.
+
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/6d5549f7-8539-4142-8300-c1b8843235b5" alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
 <p align="center">
-  step . 
+  step 8.In the Parrot Terminal window, type sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="[cookie value that you copied in Step 5]" --dbs and press Enter.
+Note: In this query, -u specifies the target URL (the one you noted down in Step 4), --cookie specifies the HTTP cookie header value, and --dbs enumerates DBMS databases.
+The above query causes sqlmap to enforce various injection techniques on the name parameter of the URL in an attempt to extract the database information of the MovieScope website
+
  <br/>
-  <img src=alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+  <img src="https://github.com/karanja26/SQL-injection/assets/55892563/8090aee6-8a67-4481-9d2d-0717e503a0bf"
+alt="image" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
   <br/>
 </p>
 
